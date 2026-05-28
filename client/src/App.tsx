@@ -1,3 +1,5 @@
+import { Outlet } from 'react-router'
+import NavBar from './components/NavBar'
 import './styles.css'
 
 function App() {
@@ -5,8 +7,8 @@ function App() {
 
   return (
     <>
-     <h1>Mulch Madness</h1>
-     <h3>Coming to a yard near you...soon...</h3>
+      <NavBar />
+      <Outlet />
     </>
   )
 }
