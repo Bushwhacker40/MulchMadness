@@ -6,7 +6,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { RouterProvider } from 'react-router';
-import {router} from "./models/Routes.tsx";
+import {router} from "./types/Routes.tsx";
 
 
 createRoot(document.getElementById('root')!).render(
