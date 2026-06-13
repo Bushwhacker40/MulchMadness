@@ -16,6 +16,7 @@ build/
 
 # NestJS
 /server/dist
+*.tsbuildinfo
 
 # Logs
 logs/
