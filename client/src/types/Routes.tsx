@@ -5,6 +5,7 @@ import CreateOrder from "../screens/CreateOrder";
 import CrewDashboard from "../screens/CrewDashboard";
 import OrderDashboard from "../screens/OrderDashboard";
 import App from "../App";
+import LogIn from "../screens/LogIn";
 
 
 export const router = createBrowserRouter([
@@ -15,7 +16,8 @@ export const router = createBrowserRouter([
         {path:"createaccount", Component: CreateAccount},
         {path:"createorder", Component: CreateOrder},
         {path:"crews", Component: CrewDashboard},
-        {path:"orders", Component: OrderDashboard}
+        {path:"orders", Component: OrderDashboard},
+        {path:"login", Component: LogIn}
     ]
 
 }

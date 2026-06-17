@@ -1,32 +1,37 @@
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import { Link } from 'react-router';
-
+import { Link } from "react-router";
 
 export default function NavBar() {
-   return (
-    <Box sx={{ flexGrow: 1}}>
-      <AppBar position="fixed">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            
-          </IconButton>
-          <Button color="inherit" component={Link} to="/">Mulch Madness</Button>
-          <Button color="inherit" component={Link} to="/createaccount">Create Account</Button>
-          <Button color="inherit" component={Link} to="/createorder">Create Order</Button>
-          <Button color="inherit" component={Link} to="/crews">Crews</Button>
-          <Button color="inherit" component={Link} to="/orders">Orders</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          <img
+            src="/mulchbag.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            className="d-inline-block align-text-top"
+          />
+          Mulch Madness
+        </Link>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <Link
+              className="nav-link" to="/createaccount">
+              Create Account
+            </Link>
+            <Link className="nav-link" to="/createorder">
+              Create Order
+            </Link>
+            <Link className="nav-link" to="/crews">
+              Crews
+            </Link>
+            <Link className="nav-link" to="/login">
+              Login
+            </Link>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }
