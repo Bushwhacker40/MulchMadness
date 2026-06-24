@@ -1,0 +1,22 @@
+$primary: #003F87;
+$body-bg: #FFFFFF;
+
+
+@import "bootstrap/scss/bootstrap";
+
+.navbar-scout {
+    @extend .navbar;
+    @extend .navbar-expand-lg;
+    @extend .bg-primary;
+    @extend .navbar-dark;
+
+    .nav-link {
+        transition: color 0.15s ease-in-out;
+
+        &:hover, &:focus{
+            color: #FDB913;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+}
