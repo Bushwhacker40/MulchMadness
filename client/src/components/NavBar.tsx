@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar-scout">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
