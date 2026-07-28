@@ -7,7 +7,6 @@ export default function LogIn() {
       <div className="col-md-8 mx-auto mb-4">
         <h1>Login</h1>
       </div>
-
       <div className="row justify-content-center mb-4">
         <div className="col-4">
           <label htmlFor="loginEmail" className="form-label text-start">
@@ -24,7 +23,6 @@ export default function LogIn() {
         <div className="invalid-feedback">
           Please enter in a valid email address.
         </div>
-
         <div className="col-4">
           <label htmlFor="loginPassword" className="form-label">
             Password
@@ -37,7 +35,6 @@ export default function LogIn() {
             required
           />
         </div>
-
         <div className="invalid-feedback">Please enter in your password.</div>
       </div>
       <div className="row justify-content-center">
