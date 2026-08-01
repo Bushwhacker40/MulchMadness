@@ -26,6 +26,8 @@ export default function NavBar() {
             <Link className="nav-link" to="/crews">
               Crews
             </Link>
+            <Link className="nav-link" to="/orders">
+            Orders</Link>
             <Link className="nav-link" to="/login">
               Login
             </Link>

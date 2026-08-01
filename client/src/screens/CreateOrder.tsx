@@ -10,73 +10,96 @@ export default function CreateOrder() {
             <div className="col-6">
               <div>
                 <h4>Delivery Information</h4>
-                <div>
-                  <label htmlFor="customerName">Customer Name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="customerName"
-                    placeholder="John Smith"
-                    required
-                  ></input>
-                </div>
-                <div>
-                  <label htmlFor="customerPhone">Phone Number</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="customerPhone"
-                    placeholder="(123) 456-7890"
-                    required
-                  ></input>
-                </div>
-                <div>
-                  <label htmlFor="customerAddress">Address</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="customerAddress"
-                    placeholder="123"
-                    required
-                  ></input>
-                </div>
-                <div>
-                  <label htmlFor="customerStreet">Street</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="customerStreet"
-                    placeholder="Example St."
-                    required
-                  ></input>
-                </div>
-                <div>
-                  <label htmlFor="customerCity">City</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="customerCity"
-                    placeholder="Bettendorf"
-                    required
-                  ></input>
-                </div>
-                <div>
-                  <label htmlFor="customerState">State</label>
-                  <select className="form-select">
-                    <option selected>State</option>
-                    <option value="IL">IL</option>
-                    <option value="IA">IA</option>
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="customerZipCode">Zip Code</label>
-                  <input
-                    type="number"
-                    className="form-control"
-                    id="customerZipCode"
-                    placeholder="52807"
-                    required
-                  ></input>
+
+                <div className="container">
+                  <div className="row">
+                    <div className="col">
+                      <div>
+                        <label htmlFor="customerName">Customer Name</label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="customerName"
+                          placeholder="John Smith"
+                          required
+                        ></input>
+                      </div>
+                    </div>
+                    <div className="col">
+                      <div>
+                        <label htmlFor="customerPhone">Phone Number</label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="customerPhone"
+                          placeholder="(123) 456-7890"
+                          required
+                        ></input>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col">
+                      <div>
+                        <label htmlFor="customerAddress">Address</label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="customerAddress"
+                          placeholder="123"
+                          required
+                        ></input>
+                      </div>
+                    </div>
+                    <div className="col">
+                      <div>
+                        <label htmlFor="customerStreet">Street</label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="customerStreet"
+                          placeholder="Example St."
+                          required
+                        ></input>
+                      </div>
+                    </div>
+                    <div className="col">
+                      <div>
+                        <label htmlFor="customerCity">City</label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="customerCity"
+                          placeholder="Bettendorf"
+                          required
+                        ></input>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-3">
+                      <div>
+                        <label htmlFor="customerState">State</label>
+                        <select className="form-select">
+                          <option selected>State</option>
+                          <option value="IL">IL</option>
+                          <option value="IA">IA</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div className="col-3">
+                      <div>
+                        <label htmlFor="customerZipCode">Zip Code</label>
+                        <input
+                          type="number"
+                          className="form-control"
+                          id="customerZipCode"
+                          placeholder="52807"
+                          required
+                        ></input>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,7 +109,9 @@ export default function CreateOrder() {
                 <div className="row">
                   <div className="col">
                     <h4>Order Information</h4>
-                    <p><strong>Note:</strong> Minimum order of 10 bags.</p>
+                    <p>
+                      <strong>Note:</strong> Minimum order of 10 bags.
+                    </p>
                   </div>
                   <div
                     className="input-group mb-3"
