@@ -5,14 +5,12 @@ export default function CreateOrder() {
         <h1>Create Order</h1>
       </div>
       <div className="container">
-        <div className="container mb-4">
           <div className="row">
             <div className="col-6">
               <div>
                 <h4>Delivery Information</h4>
-
                 <div className="container">
-                  <div className="row">
+                  <div className="row mb-4">
                     <div className="col">
                       <div>
                         <label htmlFor="customerName">Customer Name</label>
@@ -38,7 +36,7 @@ export default function CreateOrder() {
                       </div>
                     </div>
                   </div>
-                  <div className="row">
+                  <div className="row  mb-4">
                     <div className="col">
                       <div>
                         <label htmlFor="customerAddress">Address</label>
@@ -269,7 +267,6 @@ export default function CreateOrder() {
               </div>
             </div>
           </div>
-        </div>
         <div className="container">
           <div className="row">
             <div className="col">
